@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+#projects {
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    #projects {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
