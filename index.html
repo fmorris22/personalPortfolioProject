@@ -4,24 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Fiona Morris</title>
 </head>
 
 <body>
     <nav id="navbar">
-        <a href="#projects">Projects</a>
+        <a href="#projects" class="nav-link">Projects.</a>
+        <a href="#socials" class="nav-link">Profiles/Socials.</a>
     </nav>
 
     <section id="welcome-section">
-        <h1>Welcome</h1>
+        <h1 class="title">WELCOME</h1>
     </section>
 
-    <a href="https://github.com/fmorris22" target="_blank" id="profile-link">GitHub</a>
+    <section id="socials">
+        <a href="https://github.com/fmorris22" target="_blank" id="profile-link" class="btn-social">GitHub.</a>
+        <a href="#" target="_blank" class="btn-social">LinkedIn.</a>
+        <a href="#" target="_blank" class="btn-social">Resume.</a>
+    </section>
 
     <section id="projects">
-        <div class="project-tile">Project Title</div>
-        <a href="#">Project Link</a>
+        <div class="project-tile">
+            <p class="tile-text">Christopher Morris Music</p>
+            <a href="#" class="tile-link">Check it out here.</a>
+        </div>
+
+        <div class="project-tile">
+            <p class="tile-text">CSS Technical Documentation</p>
+            <a href="#" class="tile-link">Check it out here.</a>
+        </div>
     </section>
 </body>
 

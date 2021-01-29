@@ -2,21 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
 }
 
-#navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+body {
+    background-color: black;
 }
 
-#welcome-section {
-    height: 100vh;
-}
 
-#projects {
-    width: 100%;
-}
+/* Media Queries */
 
 @media (max-width: 400px) {
     #projects {
@@ -24,4 +18,111 @@
         margin-right: auto;
         margin-left: auto;
     }
+}
+
+
+/* Navbar Styles */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    outline: 1px solid black;
+    outline-offset: .5rem;
+}
+
+
+/* Welcome Section - Home Screen */
+
+#welcome-section {
+    height: 100vh;
+    background-color: black;
+    background-image: url("pexels-dids-2983308.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    font-size: 12em;
+    background-color: black;
+    color: white;
+    mix-blend-mode: multiply;
+    text-align: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    outline: 1px solid black;
+    outline-offset: .5rem;
+}
+
+
+/* Project Section */
+
+#projects {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.project-tile {
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background-color: rgb(207, 91, 91);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tile-text {
+    margin-bottom: 1rem;
+}
+
+.tile-link {
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    outline: 1px solid black;
+}
+
+
+/* Social Links */
+
+#socials {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-social {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    outline: 1px solid white;
+    outline-offset: .5rem;
 }
