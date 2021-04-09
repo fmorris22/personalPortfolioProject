@@ -5,6 +5,10 @@
     font-family: 'Anton', sans-serif;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: black;
 }
@@ -24,22 +28,31 @@ body {
 /* Navbar Styles */
 
 #navbar {
+    padding: 1rem;
+    width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .nav-link {
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 1.75rem;
     text-decoration: none;
+    text-transform: uppercase;
     background-color: black;
-    color: white;
-    margin: 1rem;
-    padding: 1rem;
+    color: rgb(237, 222, 197);
     outline: 1px solid black;
     outline-offset: .5rem;
+}
+
+.nav-link:hover {
+    color: rgb(164, 82, 61);
+    background-color: rgb(237, 222, 197);
+    text-decoration: underline;
 }
 
 
@@ -56,13 +69,18 @@ body {
 }
 
 .title {
-    font-size: 12em;
+    margin-top: 1rem;
+    height: 400px;
+    width: 65%;
+    min-width: 200px;
+    padding: 1rem;
     background-color: black;
     color: white;
     mix-blend-mode: multiply;
+    font-size: 15rem;
+    overflow: hidden;
     text-align: center;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    border: .5rem solid black;
     outline: 1px solid black;
     outline-offset: .5rem;
 }
@@ -72,36 +90,47 @@ body {
 
 #projects {
     width: 100%;
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: black;
+    background-color: rgb(150, 171, 157);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-tile {
-    width: 20rem;
-    height: 20rem;
-    margin: 1rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    background-color: rgb(207, 91, 91);
+    height: 300px;
+    padding: 1rem;
+    margin: 2rem 2rem 3rem 2rem;
+    background-color: rgb(237, 222, 197);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    outline: 1px solid black;
+    outline-offset: .5rem;
 }
 
 .tile-text {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .tile-link {
     text-decoration: none;
-    color: black;
-    padding: .5rem;
-    margin-bottom: 1rem;
-    outline: 1px solid black;
+    color: rgb(164, 82, 61);
+    outline: 1px solid rgb(164, 82, 61);
+    outline-offset: .5rem;
+}
+
+.tile-link:hover {
+    text-decoration: underline;
+}
+
+.music-img {
+    height: 70%;
+    padding-bottom: 1rem;
+}
+
+.tech-img {
+    padding-bottom: 1rem;
 }
 
 
@@ -109,20 +138,43 @@ body {
 
 #socials {
     width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: rgb(150, 171, 157);
+    border-top: 2px solid black;
     display: flex;
     justify-content: center;
 }
 
 .btn-social {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    margin-right: 2rem;
-    margin-left: 2rem;
     padding: 1rem;
-    outline: 1px solid white;
+    margin: 1rem;
+    text-decoration: none;
+    background-color: rgb(237, 222, 197);
+    color: rgb(164, 82, 61);
+    outline: 1px solid rgb(164, 82, 61);
     outline-offset: .5rem;
+}
+
+.btn-social:hover {
+    text-decoration: underline;
+}
+
+
+/* Call to action */
+
+.call-box {
+    background-image: url("pexels-dids-2983308.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    padding: 1rem;
+    font-size: 10rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    mix-blend-mode: multiply;
+    overflow: hidden;
 }
